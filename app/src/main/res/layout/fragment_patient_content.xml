@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientFragmentContent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- ==================Patient Information Group ====================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientID"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Patient ID*:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="PID123" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Last Name:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Last Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="First Name:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="First Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gender:"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPatientGenderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPatientGenderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Female" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Weight(kg):"
+                    android:ems="6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:text="80" />
+
+
+                <TextView
+                    android:id="@+id/textViewPatientHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="6"
+                    android:text="Height(cm):"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:text="170" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPatientBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:text="Birthday(yyyy/mm/dd):"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:text="1990/10/10"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewNoUse1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:visibility="invisible"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewNoUse2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            android:text="" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

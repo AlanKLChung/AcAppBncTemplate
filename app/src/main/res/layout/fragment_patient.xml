@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.patient.PatientFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textViewPatientListID"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="Patient (0):"
+                android:textSize="22dp" />
+
+            <Spinner
+                android:id="@+id/spinnerPatientList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="7"
+                android:text=""
+                android:textSize="22dp"></Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPatientNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="New" />
+
+            <Button
+                android:id="@+id/buttonPatientSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Save" />
+            <Button
+                android:id="@+id/buttonPatientDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Delete" />
+        </LinearLayout>
+
+        <include layout="@layout/fragment_patient_content" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
