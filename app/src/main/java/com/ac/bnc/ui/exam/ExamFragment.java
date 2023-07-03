@@ -12,9 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.ac.bnctemlate.databinding.FragmentExamBinding;
 
-public class ExamFragment extends Fragment {
+public class ExamFragment extends ExamFragment02Broadcast {
 
-    private FragmentExamBinding binding;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
